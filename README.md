@@ -1,12 +1,12 @@
 # python mqtt  
 
-This is a project to test in order to send and receive data from and to a mqtt broker using python paho library.
+This is a project to test Sockets with this tutorial https://www.youtube.com/watch?v=3QiPPX-KeSc.
 
 ## 1.	Installation
 
 -   To clone the repository 
 -   To create a virtual enviroment
-``` virtualenv -p $(which python3) . ```
+``` python3.7 -m venv . ```
 -   To activate the virtual enviroment (WINDOWS)
 ``` source bin/activate ```
 -   To install dependencies
@@ -17,8 +17,8 @@ This is a project to test in order to send and receive data from and to a mqtt b
 ``` cp .env-example .env ```
 
 ## 1. run the services
--   To init the server listener
-``` python listener.py ```
--   To init the server publisher
-``` python publisher.py ```
+-   To init the server 
+``` python3.7 server.py ```
+-   To init the server client
+``` python3.7 client.py ```
 
