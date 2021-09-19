@@ -2,7 +2,7 @@ import socket
 import threading
 
 HEADER = 64
-PORT = 5050
+PORT = 3003
 SERVER = socket.gethostbyname(socket.gethostname())
 # SERVER = "127.0.0.1"
 ADDR = (SERVER, PORT)
