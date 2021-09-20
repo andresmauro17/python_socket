@@ -3,8 +3,8 @@ import threading
 
 HEADER = 64
 PORT = 3003
-SERVER = socket.gethostbyname(socket.gethostname())
-# SERVER = "127.0.0.1"
+# SERVER = socket.gethostbyname(socket.gethostname())
+SERVER = "172.16.1.61"
 ADDR = (SERVER, PORT)
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
@@ -32,7 +32,7 @@ def handle_client(conn, addr):
 
 def start():
     server.listen()
-    print(f"[LISTENING] Server is listening on {SERVER}")
+    print(f"[LISTENING] Server is listening on {SERVER} and port {PORT}")
     while True:
         conn, addr = server.accept()
         thread = threading.Thread(target=handle_client, args=(conn, addr))
